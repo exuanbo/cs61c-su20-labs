@@ -7,3 +7,5 @@
 Makefile text eol=lf
 
 * linguist-vendored
+
+lab01/ll_cycle.c -linguist-vendored
