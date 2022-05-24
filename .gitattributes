@@ -9,3 +9,8 @@ Makefile text eol=lf
 * linguist-vendored
 
 lab01/ll_cycle.c -linguist-vendored
+
+lab02/bit_ops.c -linguist-vendored
+lab02/lfsr.c -linguist-vendored
+lab02/list.c -linguist-vendored
+lab02/vector.c -linguist-vendored
