@@ -73,7 +73,7 @@ vector_t *vector_new() {
 
   /* Check the data attribute of our vector to make sure we got memory */
   if (/* YOUR CODE HERE */ retval->data == NULL) {
-    free(retval);  // Why is this line necessary?
+    free(retval); // Why is this line necessary?
     allocation_failed();
   }
 
