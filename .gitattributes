@@ -14,3 +14,6 @@ lab02/bit_ops.c -linguist-vendored
 lab02/lfsr.c -linguist-vendored
 lab02/list.c -linguist-vendored
 lab02/vector.c -linguist-vendored
+
+lab03/factorial.s -linguist-vendored
+lab03/list_map.s -linguist-vendored

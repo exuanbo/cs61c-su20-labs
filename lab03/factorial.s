@@ -22,3 +22,12 @@ main:
 
 factorial:
     # YOUR CODE HERE
+    li t0, 2
+    bltu a0, t0, done
+    addi t1, a0, -1
+loop:
+    mul a0, a0, t1
+    addi t1, t1, -1
+    bgeu t1, t0, loop
+done:
+    ret
