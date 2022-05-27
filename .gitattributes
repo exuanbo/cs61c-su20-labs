@@ -17,3 +17,6 @@ lab02/vector.c -linguist-vendored
 
 lab03/factorial.s -linguist-vendored
 lab03/list_map.s -linguist-vendored
+
+lab04/megalistmanips.s -linguist-vendored
+lab04/discrete_fn.s -linguist-vendored
