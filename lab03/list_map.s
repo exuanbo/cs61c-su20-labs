@@ -37,8 +37,8 @@ map:
     ### YOUR CODE HERE ###
     addi sp, sp, -12
     sw ra, 0(sp)
-    sw s0, 4(sp)
-    sw s1, 8(sp)
+    sw s1, 4(sp)
+    sw s0, 8(sp)
 
     beq a0, x0, done    # If we were given a null pointer (address 0), we're done.
 
@@ -81,9 +81,9 @@ map:
 done:
     # Epilogue: Restore register values and free space from the stack
     ### YOUR CODE HERE ###
+    lw s0, 8(sp)
+    lw s1, 4(sp)
     lw ra, 0(sp)
-    lw s0, 4(sp)
-    lw s1, 8(sp)
     addi sp, sp, 12
 
     jr ra # Return to caller
