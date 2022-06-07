@@ -1,3 +1,4 @@
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/time.h>
@@ -16,6 +17,17 @@ void transpose_naive(int n, int blocksize, int *dst, int *src) {
  * multiple of the block size. */
 void transpose_blocking(int n, int blocksize, int *dst, int *src) {
     // YOUR CODE HERE
+    for (int yBase = 0; yBase < n; yBase += blocksize) {
+    int yBound = fmin(yBase + blocksize, n);
+    for (int xBase = 0; xBase < n; xBase += blocksize) {
+      int xBound = fmin(xBase + blocksize, n);
+      for (int y = yBase; y < yBound; y++) {
+        for (int x = xBase; x < xBound; x++) {
+          dst[y + x * n] = src[x + y * n];
+        }
+      }
+    }
+  }
 }
 
 void benchmark(int *A, int *B, int n, int blocksize,
