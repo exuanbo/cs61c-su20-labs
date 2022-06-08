@@ -22,3 +22,5 @@ lab04/megalistmanips.s -linguist-vendored
 lab04/discrete_fn.s -linguist-vendored
 
 lab07/transpose.c -linguist-vendored
+
+lab09/common.c -linguist-vendored
